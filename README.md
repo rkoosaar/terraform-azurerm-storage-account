@@ -96,7 +96,6 @@ module "az-storage-account" {
 
 | Name | Description |
 | --- | --- |
-
 | az-sa-id | Resource azurerm_storage_account id |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
