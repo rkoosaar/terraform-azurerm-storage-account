@@ -58,7 +58,7 @@ variable "az_sa_min_tls_version" {
 
 variable "az_tags" {
   description = "A mapping of tags which should be assigned to all resources"
-  type        = map
+  type        = map(any)
   default     = {}
 }
 
