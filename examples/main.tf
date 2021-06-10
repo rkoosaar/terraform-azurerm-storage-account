@@ -9,14 +9,14 @@ module "az-storage-account" {
 
   # Storage Account Variables
 
-  az_sa_name = "tfstorage"
+  az_sa_name                     = "tfstorage"
   az_sa_account_tier             = "Standard"
   az_sa_account_replication_type = "LRS"
 
   # Storage Account Network Rules
   # Default action is Deny 
   az_sa_net_rules_default_action = "Allow"
-  az_sa_net_rules_bypass   = ["AzureServices"]
+  az_sa_net_rules_bypass         = ["AzureServices"]
 
   # Storage Container Variables
 
