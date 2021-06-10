@@ -25,7 +25,9 @@ module "az-storage-account" {
   az_sa_account_replication_type = "LRS"
 
   # Storage Acoount Network Rules
-
+  
+  # default net rules action is set to Deny in variables 
+  az_sa_net_rules_default_action = "Allow"
   az_sa_net_rules_bypass   = ["AzureServices"]
 
   # Storage Container Variables
@@ -49,13 +51,13 @@ module "az-storage-account" {
 
 | Name | Version |
 | --- | --- |
-| terraform | >= 0.13 |
+| terraform | >= 1.0.0 |
 
 ## Providers
 
 | Name | Version |
 | --- | --- |
-| azurerm | >= 2.35.0 |
+| azurerm | >= 2.62.1 |
 
 ## Inputs
 
@@ -114,7 +116,7 @@ Please use the [issue tracker](https://github.com/rkoosaar/terraform-azurerm-sto
 
 ## Copyrights
 
-Copyright © 2020 Raiko Koosaar
+Copyright © 2021 Raiko Koosaar
 
 ### Contributors
 

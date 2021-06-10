@@ -13,8 +13,9 @@ module "az-storage-account" {
   az_sa_account_tier             = "Standard"
   az_sa_account_replication_type = "LRS"
 
-  # Storage Acoount Network Rules
-
+  # Storage Account Network Rules
+  # Default action is Deny 
+  az_sa_net_rules_default_action = "Allow"
   az_sa_net_rules_bypass   = ["AzureServices"]
 
   # Storage Container Variables
